@@ -1,0 +1,100 @@
+#game {
+	width: 50%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin-top: 48px;
+    max-width: 720px;
+}
+
+.control-div {
+	margin: 8px;
+	text-align: right;
+}
+
+.player {
+	height: 300px;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: 8px;
+	display: inline-block;
+	margin: 8px;
+	margin-bottom: 0px;
+}
+
+.current-turn {
+	border: 2px solid blue !important;
+}
+
+.name {
+	text-align: center;
+	width: 100%;
+	padding: 8px 0;
+	font-size: 16px;
+}
+
+.score {
+	font-size: 20px;
+	margin: 0 auto;
+	font-weight: bold;
+	padding: 8px;
+	padding-bottom: 4px;
+}
+
+.card {
+	width: 50px;
+	height: 70px;
+	border: 1px solid black;
+	margin-bottom: 8px;
+	padding: 8px;
+	display: inline-block;
+}
+
+.card-logo, .card-value {
+	text-align: center;
+}
+
+#info {
+	text-align: center;
+	width: 100%;
+	color: green;
+	font-size: 32px;
+}
+
+.score-div {
+	font-size: 16px;
+	text-align: center;
+}
+
+.disabled {
+	opacity: 0.7;
+}
+
+.mybtn {
+	font-size: 16px;
+	outline: none !important;
+	margin: 0 4px;
+}
+
+.disabled {
+		pointer-events: none;
+}
+
+.bet-div {
+	position: absolute;
+	bottom: 0;
+	padding: 8px;
+}
+
+.plus-minus-btn {
+	height: 20px;
+	width: 30px;
+	padding: 0;
+	margin:0;
+	font-weight: bold;
+}
+.bet-input {
+	width: 36px;
+	height: 20px;
+	text-align: right;
+}

@@ -1,0 +1,80 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<title>
+		BlackJack
+	</title>
+</head>
+<body>
+	<div id="game">
+		<div id="info"></div>
+		<div class="control-div">
+			<button class="btn btn-info mybtn disabled" type="button" id="start-btn" style="float:left">Start Game</button>
+			<button class="btn btn-info mybtn disabled" type="button" id="bets-btn" style="float:left">Bets Done</button>
+			<button class="btn btn-info mybtn disabled" type="button" id="hit-btn">Hit</button>
+			<button class="btn btn-info mybtn disabled" type="button" id="stay-btn">Stay</button>
+			<button class="btn btn-info mybtn disabled" type="button" id="split-btn">Split</button>
+			<button class="btn btn-info mybtn disabled" type="button" id="reset-btn">Reset</button>
+
+			<div id="num-div" style="text-align: center; margin-top: 32px">
+				<span style="font-weight: bold; font-size: 16px">Num of players: </span><input type="input" value="0" id="numPlayers" style="height: 30px" />
+				<button type="button" class="btn btn-info" onclick="setNumOfPlayers()"
+				 style="padding: 0; width: 60px; height: 30px" >OK</button>
+			</div>
+		</div>
+		<div class="players-div row" id="player-area">
+
+			<!-- <div class="col-sm-4">
+				<div class="player">
+					<div class="name">Player 1</div>
+					<div>Cards</div>
+					<div class="card">
+						<div class="card-logo">
+							<img width="15" height="15" src="hearts.svg"/>
+						</div> 
+						<div class="card-value">10</div>
+					</div>
+					<div class="score-div">
+						<div class="score current-turn" id="1_score">16</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="player disabled">
+					<div class="name">Player 1</div>
+					<div class="score-div">Current Score
+						<div class="score" id="2_score">16</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-4">
+				<div class="player disabled">
+					<div class="name">Player 1</div>
+					<div class="score-div">
+						<span>Current Score(s)</span>
+						<div class="score current-turn" id="score_1">16</div>
+						<div class="score" id="score_2">18</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</div>
+
+	<script type="text/javascript" src="player.js"></script>
+	<script type="text/javascript" src="deck.js"></script>
+	<script type="text/javascript" src="game.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("#start-btn").click(() => {
+				$(".mybtn").removeClass('disabled');
+				$("#start-btn").addClass('disabled');
+				$("#split-btn").addClass('disabled');
+				start();
+			});
+		});
+	</script>
+</body>
+</html>
